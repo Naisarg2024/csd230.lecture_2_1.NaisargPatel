@@ -1,0 +1,26 @@
+spring.application.name=Application
+-> Used to set the logical name of the Spring Boot application
+
+#spring.jpa.hibernate.ddl-auto=create-drop
+-> Used to create database tables on startup and drop them on shutdown
+
+spring.jpa.hibernate.ddl-auto=create
+-> This automatically creates database tables based on JPA entities at startup
+
+spring.datasource.url=jdbc:mysql://localhost:3307/csd230
+-> JDBC connection to MySQL on host=localhost, port=3307, database=csd230
+
+spring.datasource.username=root
+-> DB username for MySQL
+
+spring.datasource.password=itstudies12345
+-> DB password for the user
+
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+-> Specifies the JDBC driver name for MySQL that is used by Spring
+
+spring.jpa.show-sql: true
+-> Logs generated SQL statements to the console
+
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+-> Informs hibernate to generate SQL optimized for MySQL
